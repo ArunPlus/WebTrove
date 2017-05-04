@@ -1,0 +1,5 @@
+# Prevent directory listing in this folder and all its sub-folders
+Options -Indexes
+
+# Deny direct access to any files in this folder
+# deny from all

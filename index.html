@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" ng-app="WizardsApp" ng-strict-di ng-cloak>
+	<head>
+		<title>WebTrove | Autopay Web Services Application</title>
+		<!-- <base href="/"> -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1"/>
+		<meta name="description" content="WebTrove | Autopay Web Services Application"/>
+		<link href="src/img/icons/favicon.gif" rel="icon" type="image/gif"/>
+		
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+		
+		<link href="dist/css/app.css" rel="stylesheet"/>
+		<link href="bower_components/jsoneditor/dist/jsoneditor.min.css" rel="stylesheet"/>
+		<link href="bower_components/angular-carousel/dist/angular-carousel.min.css" rel="stylesheet"/>
+		<link href="bower_components/angular-jk-carousel/dist/jk-carousel.min.css" rel="stylesheet"/>
+		<link href="bower_components/animate.css/animate.min.css" rel="stylesheet"/>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/ng-table/1.0.0/ng-table.min.css" rel="stylesheet"/>
+		<link href="src/css/custom.css" rel="stylesheet"/>
+		
+		<style>
+			.md-default-theme { background-color: #FFFFFF; }
+		</style>		
+	</head>
+
+	<body layout="column" layout-fill ng-controller="AppCtrl" md-theme="{{ dynamicTheme }}" md-theme-watch ng-cloak>
+	
+		<!-- Views -->
+		<div ui-view layout="column" layout-fill></div>
+		
+		<state-loading-indicator></state-loading-indicator>
+
+	    <!-- Javascript Dependencies - Scripts -->
+	    <!-- Javascript Dependencies - Scripts -->
+	    <script src="dist/js/app-js-dep.js"></script>
+	    <script src="dist/js/app-ng-dep.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ng-table/1.0.0/ng-table.min.js"></script>
+		<script src="bower_components/jsonlint-master/web/json2.js"></script>
+		<script src="bower_components/jsonlint-master/web/jsonlint.js"></script>
+
+	    <!-- Application Scripts -->
+	    <script src="src/js/app.js"></script>
+	    <script src="src/js/modules.js"></script>
+	    <script src="src/js/configs.js"></script>
+	    <script src="src/js/run.js"></script>
+
+		<!-- Custom Directives -->
+		<!-- None -->
+		
+	    <!-- Controllers -->
+		<script src="src/js/controllers/app.js"></script>
+		<script src="src/js/controllers/app.sidebarLeft.js"></script>
+	    <script src="src/js/controllers/page.home.js"></script>
+		<script src="src/js/controllers/page.login.js"></script>
+	    <script src="src/js/controllers/page.about.js"></script>
+	    <script src="src/js/controllers/page.contact.js"></script>
+	    <script src="src/js/controllers/page.faqs.js"></script>
+		
+		<script src="src/js/controllers/page.dashboard.js"></script>
+		<script src="src/js/controllers/page.categories.js"></script>
+		<script src="src/js/controllers/page.services.js"></script>
+		<script src="src/js/controllers/dialog.service.js"></script>
+		<script src="src/js/controllers/dialog.testing.js"></script>
+			
+		<script src="src/js/controllers/dialog.jsonEditor.js"></script>
+		<script src="src/js/controllers/dialog.jsonValidator.js"></script>
+
+		<!-- Services -->
+	  	<script src="src/js/services/webservices.js"></script>
+		<script src="src/js/services/service.pdf.js"></script>
+		<script src="src/js/services/service.soap.js"></script>
+
+		<!-- Directives -->
+		<script src="src/js/directives/stateLoading.js"></script>
+		<script src="src/js/directives/uploadFile.js"></script>
+
+	</body>
+</html>
